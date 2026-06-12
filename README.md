@@ -37,7 +37,7 @@ graph LR
 
     subgraph Salida["Conversión y Amplificación"]
         D(DAC: PCM5102A / PWM)
-        E[Amplificador: Familia TPA]
+        E[Amplificador: TPA3116d2]
         F((Bocina))
     end
 
