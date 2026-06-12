@@ -1,11 +1,3 @@
----
-
-### Entregable: Esquema de Conexiones de Hardware (Pinout y Mapeo)
-
-Considerando la tarjeta **Intel DE10-Lite** (basada en el FPGA MAX 10) y los componentes físicos que tienes (ADC, DAC, Amplificador XH-M139 y bocinas de $4\ \Omega$), este documento define el conexionado eléctrico.
-
-
-```markdown
 # 🔌 Guía de Conexiones Físicas y Asignación de Pines (Pinout)
 
 Este documento detalla el mapa de cableado eléctrico entre la tarjeta de desarrollo **Intel DE10-Lite (MAX 10)** y los módulos externos que conforman el ecualizador de audio de 3 bandas.
@@ -30,12 +22,8 @@ Este documento detalla el mapa de cableado eléctrico entre la tarjeta de desarr
 
 ```mermaid
 graph LR
-    A[Celular / Fuente Audio] -->|Jack Auxiliar 3.5mm| B(ADC PCM1808)
-    B -->|Señales TTL Digitales| C[FPGA DE10-Lite]
-    C -->|Audio Procesado I2S| D(DAC PCM5102A)
-    D -->|Señal Analógica L/R| E(Amplificador XH-M139 / TPA3116D2)
-    E -->|Salida de Potencia| F((Bocinas 4 Ohms / 5W))
-
-    style C fill:#2b3e50,stroke:#333,stroke-width:2px,color:#fff
-    style E fill:#1a5276,stroke:#333,stroke-width:1px,color:#fff
-
+    A[Celular / Fuente Audio] --> B(ADC PCM1808)
+    B --> C[FPGA DE10-Lite]
+    C --> D(DAC PCM5102A)
+    D --> E(Amplificador TPA3116d2)
+    E --> F((Bocinas 4 Ohms / 5W))
