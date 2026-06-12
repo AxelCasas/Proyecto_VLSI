@@ -2,7 +2,7 @@
 
 ### Entregable: Esquema de Conexiones de Hardware (Pinout y Mapeo)
 
-Considerando la tarjeta **Intel DE10-Lite** (basada en el FPGA MAX 10) y los componentes físicos que tienes (ADC, DAC, Amplificador XH-M139 y bocinas de $4\ \Omega$), este documento define el conexionado eléctrico para tu reporte y para tu archivo de restricciones de pines (`.qsf`).
+Considerando la tarjeta **Intel DE10-Lite** (basada en el FPGA MAX 10) y los componentes físicos que tienes (ADC, DAC, Amplificador XH-M139 y bocinas de $4\ \Omega$), este documento define el conexionado eléctrico.
 
 
 ```markdown
